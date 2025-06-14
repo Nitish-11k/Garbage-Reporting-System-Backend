@@ -56,6 +56,7 @@ smart-garbage-reporting/
 ├── uploads/ (image storage)
 ├── pom.xml
 └── README.md
+```
 
 ---
 
@@ -66,11 +67,25 @@ smart-garbage-reporting/
 - For MySQL:
 ```bash
 properties
+
 spring.datasource.url=jdbc:mysql://localhost:3306/garbage_db
 spring.datasource.username=root
 spring.datasource.password=yourpassword
 spring.jpa.hibernate.ddl-auto=update
 file.upload-dir=uploads/
+```
+
+## 📮 API Endpoints
+
+| Method | Endpoint                            | Description                   |
+|--------|-------------------------------------|-------------------------------|
+| POST   | `/api/report`                       | Create a new report           |
+| GET    | `/api/report`                       | List all reports              |
+| GET    | `/api/report/{id}`                  | Get single report by ID       |
+| PUT    | `/api/report/{id}/status?status=resolved` | Update report status     |
+
+> 🧪 Use tools like **Postman** to test these endpoints.
+
 
 ---
 ### Clone the Repository
