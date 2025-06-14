@@ -41,6 +41,7 @@ A web application that allows users to report uncleaned garbage locations to mun
 ---
 ### 📁 Project Structure
 
+```bash
 smart-garbage-reporting/
 ├── src/
 │ ├── main/
@@ -58,7 +59,7 @@ smart-garbage-reporting/
 
 ---
 
-###⚙️ Configure Database
+**⚙️Configure Database**
 
 - Edit src/main/resources/application.properties:
 
@@ -71,7 +72,7 @@ spring.datasource.password=yourpassword
 spring.jpa.hibernate.ddl-auto=update
 file.upload-dir=uploads/
 
-
+---
 ### Clone the Repository
 
 ```bash
