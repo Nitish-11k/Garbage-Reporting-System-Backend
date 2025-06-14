@@ -38,6 +38,40 @@ A web application that allows users to report uncleaned garbage locations to mun
 - MySQL or H2 (embedded)
 - Git
 
+---
+### 📁 Project Structure
+
+smart-garbage-reporting/
+├── src/
+│ ├── main/
+│ │ ├── java/com/example/garbage/
+│ │ │ ├── controller/
+│ │ │ ├── model/
+│ │ │ ├── repository/
+│ │ │ └── service/
+│ │ └── resources/
+│ │ ├── application.properties
+│ │ └── templates/
+├── uploads/ (image storage)
+├── pom.xml
+└── README.md
+
+---
+
+###⚙️ Configure Database
+
+- Edit src/main/resources/application.properties:
+
+- For MySQL:
+```bash
+properties
+spring.datasource.url=jdbc:mysql://localhost:3306/garbage_db
+spring.datasource.username=root
+spring.datasource.password=yourpassword
+spring.jpa.hibernate.ddl-auto=update
+file.upload-dir=uploads/
+
+
 ### Clone the Repository
 
 ```bash
