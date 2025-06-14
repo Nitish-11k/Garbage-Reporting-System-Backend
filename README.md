@@ -79,7 +79,7 @@ file.upload-dir=uploads/
 
 | Method | Endpoint                            | Description                   |
 |--------|-------------------------------------|-------------------------------|
-| POST   | `/api/report`                       | Create a new report           |
+| POST   | `/api/report/add`                       | Create a new report           |
 | GET    | `/api/report`                       | List all reports              |
 | GET    | `/api/report/{id}`                  | Get single report by ID       |
 | PUT    | `/api/report/{id}/status?status=resolved` | Update report status     |
